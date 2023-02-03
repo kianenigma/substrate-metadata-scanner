@@ -8,7 +8,6 @@ import { hideBin } from 'yargs/helpers';
 import { prodChains } from "@polkadot/apps-config";
 
 async function main() {
-	const options = await optionsPromise;
 	for (const chain of prodChains) {
 		// connect to the chain ws endpoint
 		console.log(chain.text);
