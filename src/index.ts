@@ -5,13 +5,14 @@ import '@polkadot/types-augment';
 import { ApiPromise, WsProvider } from '@polkadot/api';
 import yargs from 'yargs';
 import { hideBin } from 'yargs/helpers';
-import { prodChains } from "@polkadot/apps-config";
+import { prodChains } from './wss';
 
 async function main() {
 	for (const chain of prodChains) {
 		// connect to the chain ws endpoint
-		console.log(chain.text);
-		console.log(chain.providers);
+		console.log('CHAIN ---> ', chain);
+		// console.log(chain.text);
+		// console.log(chain.providers);
 	}
 }
 
