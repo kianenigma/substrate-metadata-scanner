@@ -472,6 +472,16 @@ export const kusamaRelay = [
 
 export const kusamaParas = [
 	{
+		info: 'kpron',
+		homepage: 'http://apron.network/',
+		isUnreachable: true,
+		paraId: 2019,
+		text: 'Kpron',
+		providers: {
+			Kpron: 'wss://kusama-kpron-rpc.apron.network/'
+		}
+	},
+	{
 		info: 'altair',
 		homepage: 'https://centrifuge.io/altair',
 		paraId: 2088,
@@ -719,16 +729,7 @@ export const kusamaParas = [
 			OnFinality: 'wss://kintsugi.api.onfinality.io/public-ws'
 		}
 	},
-	{
-		info: 'kpron',
-		homepage: 'http://apron.network/',
-		isUnreachable: true,
-		paraId: 2019,
-		text: 'Kpron',
-		providers: {
-			Kpron: 'wss://kusama-kpron-rpc.apron.network/'
-		}
-	},
+
 	{
 		info: 'listen',
 		homepage: 'https://listen.io/',
